@@ -18,7 +18,7 @@ export class AnalyticsService {
     const userAgent = parser.setUA(data.userAgent).getResult();
 
     // Extract browser and device information
-    const browser = (data as Analytics).browser.name;
+    const browser = (data as Analytics).browser;
     const deviceType = userAgent.device.type;
 
     // Add browser and device information to analytics data

@@ -33,7 +33,9 @@ export class AuthController {
     password: string,
   ): Promise<{ userId: string; username: string } | null> {
     const user = await this.authService.validateUser(username, password);
-    if (!user) return null;
-    return user;
+    if (user == null || user == undefined) {
+      return null;
+    } 
+    // return { message: 'success', ...user };
   }
 }

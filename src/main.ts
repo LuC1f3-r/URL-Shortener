@@ -1,8 +1,9 @@
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 import helmet from 'helmet';
-import * as rateLimit from 'express-rate-limit';
-import * as xssClean from 'xss-clean';
+import rateLimit from 'express-rate-limit';
+import xssClean from 'xss-clean';
+import { HttpExceptionFilter } from './http-exception.filter';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);

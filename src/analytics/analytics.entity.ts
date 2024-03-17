@@ -1,5 +1,4 @@
-import { Entity, Body, PrimaryGeneratedColumn, Column } from 'typeorm';
-
+import { Entity, PrimaryGeneratedColumn, Column } from 'typeorm';
 @Entity()
 export class Analytics {
   @PrimaryGeneratedColumn()
@@ -16,5 +15,9 @@ export class Analytics {
 
   @Column()
   userAgent: string;
+
+  @Column()
+  browser: string;
+  deviceType: any;
 
 }

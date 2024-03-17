@@ -2,7 +2,6 @@ import { Module } from '@nestjs/common';
 import { Injectable } from '@nestjs/common';
 // import { TypeOrmModule } from '@nest/typeorm';
 import { UrlController } from './url.controller';
-import { UrlService } from './url.service';
 // import { Url} from './url.entity';
 @Injectable()
 export class UrlService {
