@@ -77,8 +77,5 @@
 <h2 id="contributing">Contributing</h2>
 <p>Contributions to the project are welcome! If you have any suggestions, bug reports, or feature requests, please open an issue or submit a pull request on GitHub.</p>
 
-<h2 id="license">License</h2>
-<p>This project is licensed under the <a href="LICENSE">MIT License</a>.</p>
-
 </body>
 </html>
